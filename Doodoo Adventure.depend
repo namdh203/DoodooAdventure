@@ -1,0 +1,225 @@
+# depslib dependency file v1.0
+1647055016 source:d:\project test\doodoo adventure\doodoo adventure\src\graphics\texture.cpp
+	"Texture.h"
+	"Engine.h"
+
+1647054930 d:\project test\doodoo adventure\doodoo adventure\src\graphics\texture.h
+	<string>
+	"SDL.h"
+	<map>
+
+1648466402 d:\project test\doodoo adventure\doodoo adventure\src\core\engine.h
+	"SDL.h"
+	"SDL_image.h"
+
+1647054709 source:d:\project test\doodoo adventure\doodoo adventure\main.cpp
+	"Engine.h"
+
+1647055282 source:d:\project test\doodoo adventure\doodoo adventure\src\core\engine.cpp
+	"Engine.h"
+	"Texture.h"
+	<iostream>
+	"SDL.h"
+
+1653668386 source:d:\project test\doodoo adventure\main.cpp
+	"Engine.h"
+	"Timer.h"
+	"Sound.h"
+
+1653666822 d:\project test\doodoo adventure\src\core\engine.h
+	"transform.h"
+	"SDL.h"
+	"SDL_image.h"
+
+1652786678 source:d:\project test\doodoo adventure\src\graphics\texture.cpp
+	"Texture.h"
+	"Engine.h"
+	"SDL.h"
+
+1652197320 d:\project test\doodoo adventure\src\graphics\texture.h
+	<string>
+	"SDL.h"
+	<map>
+
+1648543590 source:d:\project test\doodoo adventure\src\physics\vector2d.cpp
+	"vector2d.h"
+
+1648549445 d:\project test\doodoo adventure\src\physics\vector2d.h
+	<iostream>
+
+1653672331 source:d:\project test\doodoo adventure\src\core\engine.cpp
+	"Engine.h"
+	"Texture.h"
+	"Warrior.h"
+	"Input.h"
+	"Timer.h"
+	"MapCode.h"
+	"Collision.h"
+	"MenuGame.h"
+	"Sound.h"
+	<iostream>
+	<string>
+
+1648549454 d:\project test\doodoo adventure\src\physics\transform.h
+	"vector2d.h"
+
+1652779267 d:\project test\doodoo adventure\src\characters\doodoo.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
+
+1653232610 d:\project test\doodoo adventure\src\characters\character.h
+	"GameObject.h"
+	<string>
+
+1653103353 d:\project test\doodoo adventure\src\object\gameobject.h
+	"Object.h"
+	"Transform.h"
+	"SDL.h"
+
+1648549671 d:\project test\doodoo adventure\src\object\object.h
+
+1652197558 source:d:\project test\doodoo adventure\src\characters\doodoo.cpp
+	"Doodoo.h"
+	"Texture.h"
+	"Input.h"
+	"SDL.h"
+
+1653206628 source:d:\project test\doodoo adventure\src\animation\animation.cpp
+	"Animation.h"
+	"Texture.h"
+
+1653206395 d:\project test\doodoo adventure\src\animation\animation.h
+	"SDL.h"
+	<string>
+
+1652862591 d:\project test\doodoo adventure\src\physics\rigidbody.h
+	"vector2d.h"
+
+1653493408 d:\project test\doodoo adventure\src\inputs\input.h
+	"SDL.h"
+
+1653493495 source:d:\project test\doodoo adventure\src\inputs\input.cpp
+	"Input.h"
+	"Engine.h"
+
+1652197468 source:d:\project test\doodoo adventure\src\timer\timer.cpp
+	"Timer.h"
+	"SDL.h"
+
+1653493241 d:\project test\doodoo adventure\src\timer\timer.h
+
+1651021910 source:d:\project test\doodoo adventure\src\map\tilelayer.cpp
+	"TileLayer.h"
+
+1651021894 d:\project test\doodoo adventure\src\map\tilelayer.h
+	<string>
+	<vector>
+	"Layer.h"
+
+1651020583 d:\project test\doodoo adventure\src\map\layer.h
+
+1652925259 source:d:\project test\doodoo adventure\src\collision\collision.cpp
+	"Collision.h"
+	"Engine.h"
+	"SDL.h"
+	<iostream>
+
+1652859838 d:\project test\doodoo adventure\src\collision\collision.h
+	"SDL.h"
+	<vector>
+	"MapCode.h"
+	"Warrior.h"
+
+1652198262 d:\project test\doodoo adventure\src\map\gamemap.h
+	"Layer.h"
+	<vector>
+
+1653672342 source:d:\project test\doodoo adventure\src\map\mapcode.cpp
+	<Windows.h>
+	<unistd.h>
+	"MapCode.h"
+	"Texture.h"
+	"SDL.h"
+	<bits/stdc++.h>
+
+1653373462 d:\project test\doodoo adventure\src\map\mapcode.h
+	<iostream>
+	<string>
+	<vector>
+	"Warrior.h"
+	"Boss.h"
+	"Enemy.h"
+
+1653666778 source:d:\project test\doodoo adventure\src\characters\warrior.cpp
+	"Warrior.h"
+	"Texture.h"
+	"Engine.h"
+	"Input.h"
+	"Collision.h"
+	"MapCode.h"
+	"SDL.h"
+	"Sound.h"
+
+1653464047 d:\project test\doodoo adventure\src\characters\warrior.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
+	"Hitting.h"
+	"vector2d.h"
+
+1652779468 d:\project test\doodoo adventure\\warrior.h
+
+1652859462 d:\project test\doodoo adventure\src\physics\hitting.h
+	"SDL.h"
+
+1653670994 source:d:\project test\doodoo adventure\src\characters\enemy.cpp
+	"Enemy.h"
+	"Texture.h"
+	"Engine.h"
+	"Input.h"
+	"Collision.h"
+	"SDL.h"
+
+1653497642 d:\project test\doodoo adventure\src\characters\enemy.h
+	"Character.h"
+	"Animation.h"
+	"Hitting.h"
+	"vector2d.h"
+	"transform.h"
+
+1653469203 d:\project test\doodoo adventure\src\characters\boss.h
+	"Character.h"
+	"Animation.h"
+	"Hitting.h"
+	"vector2d.h"
+	"transform.h"
+	<string>
+
+1653493921 source:d:\project test\doodoo adventure\src\characters\boss.cpp
+	"Boss.h"
+	"Texture.h"
+	"Engine.h"
+	"Input.h"
+	"Collision.h"
+	"SDL.h"
+
+1653672202 source:d:\project test\doodoo adventure\src\menu\menugame.cpp
+	"MenuGame.h"
+	"Texture.h"
+	"Input.h"
+	"Engine.h"
+	"Sound.h"
+
+1653524921 d:\project test\doodoo adventure\src\menu\menugame.h
+	"Animation.h"
+	"transform.h"
+	<string>
+
+1653524565 source:d:\project test\doodoo adventure\src\sound\sound.cpp
+	"Sound.h"
+
+1653524626 d:\project test\doodoo adventure\src\sound\sound.h
+	"SDL_mixer.h"
+	<string>
+

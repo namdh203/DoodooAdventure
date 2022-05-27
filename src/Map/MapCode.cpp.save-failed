@@ -1,0 +1,79 @@
+#ifdef _WIN32
+#include <Windows.h>
+#else
+#include <unistd.h>
+#endif
+#include "MapCode.h"
+#include "Texture.h"
+#include "SDL.h"
+#include <bits/stdc++.h>
+using namespace std;
+
+MapCode* MapCode::s_Go = nullptr;
+
+void MapCode::GetBase(int stage) {
+  string path = "assets/Maps_Code/" + to_string(stage) + ".txt";
+
+  ifstream inp(path.c_str());
+
+  for (int i = 0; i < 15; ++i)
+    for (int j = 0; j < 23; ++j) {
+      inp >> base[i][j];
+    }
+}
+
+//void MapCode::initEnemy() {
+//  int cnt = 2 + (SDL_GetTicks() % 3);
+//  init_cnt += cnt;
+//  ene.clear(); ene_death.clear();
+//  while (--cnt) {
+//    while (true) {
+//      int i = SDL_GetTicks() % 15;
+//      int j = SDL_GetTicks() % 22;
+//      // available spawn
+//      if (base[i][j] == 2) {
+//        base[i][j] = 1;
+//        Enemy* cur = new Enemy(new Properties("enemy_idle", 0, 0, 48, 48),
+//                               Transform(j * 32 + 4, i * 32 + 4) );
+//        ene.push_back(cur);
+//        ene_death.push_back(false);
+//        break;
+//      }
+//    }
+//  }
+//}
+//
+//void MapCode::Update(float dt, int cur_stage) {
+//  if (stage != cur_stage) return;
+//
+//  for (int i = 0; i < (int)ene.size(); ++i) {
+//    ene[i]->Update(dt);
+//    if (ene[i]->HP <= -1 && ene_death[i] == false) {
+//      ene_death[i] == true;
+//      --init_cnt;
+//    }
+//  }
+//  if (stage == 6) {
+//    boss->Update(dt);
+//  }
+//}
+//
+//
+//
+//void MapCode::DrawEnemy() {
+//  for (int i = 0; i < (int)ene.size(); ++i)
+//    ene[i]->Draw();
+//  if (stage == 9) boss->Draw();
+//}
+//
+//
+//void MapCode::Reset() {
+//  for (int i = 0; i < 10; ++i) completed[i] = 0;
+//
+//  for (int i = 0; i < 30; ++i)
+//    for (int j = 0; j < 30; ++j)
+//    base[i][j] = 0;
+//}
+
+
+
