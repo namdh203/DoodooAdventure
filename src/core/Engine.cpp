@@ -29,7 +29,9 @@ bool Engine::Init() {
     return false;
   }
 
-  m_Window = SDL_CreateWindow("Doodoo Adventure", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+  SDL_WindowFlags wf = (SDL_WindowFlags)(SDL_WINDOW_RESIZABLE | SDL_WINDOW_ALLOW_HIGHDPI);
+
+  m_Window = SDL_CreateWindow("Doodoo Adventure", SDL_WINDOWPOS_CENTERED, SDL_WINDOWPOS_CENTERED, SCREEN_WIDTH, SCREEN_HEIGHT, wf);
   if (m_Window == nullptr) {
     SDL_Log("false to create Window : %s", SDL_GetError());
     return false;
@@ -74,8 +76,7 @@ bool Engine::Init() {
   Texture::GetGo()->Load("boss_idle" + to_string(i), "assets/Boss/idle/idle" + to_string(i) + ".png");
 
   player = new Warrior(new Properties("player", 50, 100, 120, 80));
-  MapCode::GetGo()->boss = new Boss(new Properties("boss_idle", 400, 300, 96, 32),
-                                        Transform(400, 300));
+  MapCode::GetGo()->boss = new Boss(new Properties("boss_idle", 400, 300, 96, 32), Transform(400, 300));
 
   isPlaying = true;
   resume = true;
@@ -178,10 +179,8 @@ void Engine::Update() {
 //      SDL_Log("%d %d", player->HP, boss->HP);
       /*-----------------------------------------------------------*/
     } else {
-      if (MapCode::GetGo()->stage != player->last_stage
-          && !MapCode::GetGo()->completed[player->stage]) {
+      if (MapCode::GetGo()->stage != player->last_stage && !MapCode::GetGo()->completed[player->stage]) {
         MapCode::GetGo()->initEnemy();
-//        player->last_stage = player->stage;
       }
 
       Collision::GetGo()->GetMapCode();
@@ -210,13 +209,10 @@ void Engine::Update() {
       if (!cnt) {
         if (!MapCode::GetGo()->completed[player->stage]) {
           MapCode::GetGo()->completed[player->stage] = 1;
-          if (player->HP < player->initHP) {
-            ++player->HP;
-          }
         }
       }
-
     }
+
     if (player->HP <= 0)
       Sound::GetGo()->play("assets/sound/gameOver.wav", 0);
   } else {
@@ -248,10 +244,8 @@ void Engine::Render() {
     player->Draw();
     MapCode::GetGo()->DrawEnemy();
 
-    if (player->stage) {
-      for (int i = 0; i < player->HP; ++i) {
-        Texture::GetGo()->Draw("HP", i * 32, 0, 32, 32);
-      }
+    for (int i = 0; i < player->HP; ++i) {
+      Texture::GetGo()->Draw("HP", i * 32, 0, 32, 32);
     }
 
     if (player->stage == 6) {

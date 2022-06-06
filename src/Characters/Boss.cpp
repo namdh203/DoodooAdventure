@@ -6,6 +6,8 @@
 
 #include "SDL.h"
 
+#include "Sound.h"
+
 using namespace std;
 
 Boss::Boss(Properties* props, Transform p) : Character(props) {
@@ -55,12 +57,6 @@ void Boss::Draw() {
       m_Animation->DrawFrame(position.X, position.Y, 450, 150, m_Flip);
     }
   }
-
-//  SDL_Rect hit_box = HitBox ->Get();
-//  SDL_RenderDrawRect (Engine::GetGo() ->GetRenderer(), &hit_box);
-//  hit_box = HitBoxAttack ->Get();
-//  if (dame) SDL_RenderDrawRect (Engine::GetGo() ->GetRenderer(), &hit_box);
-
 }
 
 void Boss::Clean() {

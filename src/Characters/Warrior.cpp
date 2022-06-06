@@ -37,7 +37,6 @@ Warrior::Warrior(Properties* props) : Character(props) {
   MapCode::GetGo()->completed[0] = 1;
 
 	GetHitDelay = GET_HIT_DELAY_WARRIOR;
-	ChangeStageDelay = CHANGE_STAGE_DELAY;
 
 	save_point = vector2d(position->X, position->Y);
 }

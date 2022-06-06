@@ -3,7 +3,7 @@
 #include "Engine.h"
 #include "Input.h"
 #include "Collision.h"
-
+#include "Sound.h"
 #include "SDL.h"
 
 using namespace std;
@@ -36,16 +36,16 @@ void Enemy::Draw() {
       m_Animation->Update();
     }
     if (m_Animation->m_SpriteFrame == 0) startDie = true;
-    if (m_Animation->m_SpriteFrame == 3 && startDie) HP = -1;
+    if (m_Animation->m_SpriteFrame == 3 && startDie) {
+      Sound::GetGo()->play("assets/sound/menuSelect.wav", 0);
+      HP = -1;
+    }
   } else {
     m_Animation->SetProps("enemy_walk", 1, 4, 150, m_Flip);
     m_Animation->Update();
   }
 
   m_Animation->Draw(position.X, position.Y, 48, 48, m_Flip);
-
-  SDL_Rect hit_box = HitBox->Get();
-  SDL_RenderDrawRect(Engine::GetGo()->GetRenderer(), &hit_box);
 
 }
 

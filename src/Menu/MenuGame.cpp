@@ -41,21 +41,5 @@ void MenuGame::Draw() {
 	}
 	else {
 		Texture::GetGo() ->Draw("tutorial", 0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);
-		m_Animation = new Animation();
-		m_Animation->SetProps("player_run", 1, 10, 100);
-		m_Animation->Update();
-		m_Animation->Draw(300, 40, 120, 80);
-		m_Animation = new Animation();
-		m_Animation->SetProps("player_attack", 1, 4, 100);
-		m_Animation->Update();
-		m_Animation ->Draw(300, 130, 120, 80);
-		m_Animation = new Animation();
-		m_Animation->SetProps("player_jump", 1, 3, 100);
-		m_Animation->Update();
-		m_Animation ->Draw(300, 220, 120, 80);
-		m_Animation = new Animation();
-		m_Animation->SetProps("player_slide", 1, 4, 100);
-		m_Animation->Update();
-		m_Animation ->Draw(300, 310, 120, 80);
 	}
 }

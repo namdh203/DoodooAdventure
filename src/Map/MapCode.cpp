@@ -9,6 +9,8 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+#include "Sound.h"
+
 MapCode* MapCode::s_Go = nullptr;
 
 void MapCode::GetBase(int stage) {
