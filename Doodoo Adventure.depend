@@ -223,3 +223,178 @@
 	"SDL_mixer.h"
 	<string>
 
+1654491993 source:d:\project test\doodooadventure-main\main.cpp
+	"Engine.h"
+	"Timer.h"
+	"Sound.h"
+
+1654491993 d:\project test\doodooadventure-main\src\core\engine.h
+	"transform.h"
+	"SDL.h"
+	"SDL_image.h"
+
+1654491993 d:\project test\doodooadventure-main\src\physics\transform.h
+	"vector2d.h"
+
+1654491993 d:\project test\doodooadventure-main\src\physics\vector2d.h
+	<iostream>
+
+1654491993 d:\project test\doodooadventure-main\src\timer\timer.h
+
+1654491993 d:\project test\doodooadventure-main\src\sound\sound.h
+	"SDL_mixer.h"
+	<string>
+
+1654491993 source:d:\project test\doodooadventure-main\src\animation\animation.cpp
+	"Animation.h"
+	"Texture.h"
+
+1654491993 d:\project test\doodooadventure-main\src\animation\animation.h
+	"SDL.h"
+	<string>
+
+1654491993 d:\project test\doodooadventure-main\src\graphics\texture.h
+	<string>
+	"SDL.h"
+	<map>
+
+1654491993 source:d:\project test\doodooadventure-main\src\characters\boss.cpp
+	"Boss.h"
+	"Texture.h"
+	"Engine.h"
+	"Input.h"
+	"Collision.h"
+	"SDL.h"
+	"Sound.h"
+
+1654491993 d:\project test\doodooadventure-main\src\characters\boss.h
+	"Character.h"
+	"Animation.h"
+	"Hitting.h"
+	"vector2d.h"
+	"transform.h"
+	<string>
+
+1654491993 d:\project test\doodooadventure-main\src\characters\character.h
+	"GameObject.h"
+	<string>
+
+1654491993 d:\project test\doodooadventure-main\src\object\gameobject.h
+	"Object.h"
+	"Transform.h"
+	"SDL.h"
+
+1654491993 d:\project test\doodooadventure-main\src\object\object.h
+
+1654491993 d:\project test\doodooadventure-main\src\physics\hitting.h
+	"SDL.h"
+
+1654491993 d:\project test\doodooadventure-main\src\inputs\input.h
+	"SDL.h"
+
+1654491993 d:\project test\doodooadventure-main\src\collision\collision.h
+	"SDL.h"
+	<vector>
+	"MapCode.h"
+	"Warrior.h"
+
+1654491993 d:\project test\doodooadventure-main\src\map\mapcode.h
+	<iostream>
+	<string>
+	<vector>
+	"Warrior.h"
+	"Boss.h"
+	"Enemy.h"
+
+1654491993 d:\project test\doodooadventure-main\src\characters\warrior.h
+	"Character.h"
+	"Animation.h"
+	"RigidBody.h"
+	"Hitting.h"
+	"vector2d.h"
+
+1654491993 d:\project test\doodooadventure-main\src\physics\rigidbody.h
+	"vector2d.h"
+
+1654491993 d:\project test\doodooadventure-main\src\characters\enemy.h
+	"Character.h"
+	"Animation.h"
+	"Hitting.h"
+	"vector2d.h"
+	"transform.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\characters\enemy.cpp
+	"Enemy.h"
+	"Texture.h"
+	"Engine.h"
+	"Input.h"
+	"Collision.h"
+	"Sound.h"
+	"SDL.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\characters\warrior.cpp
+	"Warrior.h"
+	"Texture.h"
+	"Engine.h"
+	"Input.h"
+	"Collision.h"
+	"MapCode.h"
+	"SDL.h"
+	"Sound.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\collision\collision.cpp
+	"Collision.h"
+	"Engine.h"
+	"SDL.h"
+	<iostream>
+
+1654491993 source:d:\project test\doodooadventure-main\src\core\engine.cpp
+	"Engine.h"
+	"Texture.h"
+	"Warrior.h"
+	"Input.h"
+	"Timer.h"
+	"MapCode.h"
+	"Collision.h"
+	"MenuGame.h"
+	"Sound.h"
+	<iostream>
+	<string>
+
+1654491993 d:\project test\doodooadventure-main\src\menu\menugame.h
+	"Animation.h"
+	"transform.h"
+	<string>
+
+1654491993 source:d:\project test\doodooadventure-main\src\graphics\texture.cpp
+	"Texture.h"
+	"Engine.h"
+	"SDL.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\inputs\input.cpp
+	"Input.h"
+	"Engine.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\map\mapcode.cpp
+	<Windows.h>
+	<unistd.h>
+	"MapCode.h"
+	"Texture.h"
+	"SDL.h"
+	<bits/stdc++.h>
+	"Sound.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\menu\menugame.cpp
+	"MenuGame.h"
+	"Texture.h"
+	"Input.h"
+	"Engine.h"
+	"Sound.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\sound\sound.cpp
+	"Sound.h"
+
+1654491993 source:d:\project test\doodooadventure-main\src\timer\timer.cpp
+	"Timer.h"
+	"SDL.h"
+
